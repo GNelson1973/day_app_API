@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Day.delete_all
+
+day1 = Day.create({ title: 'On my way', body: 'a lot happing these days.. following my own path' })
+day2 = Day.create({ title: 'Making it', body: 'if you can make it in New York you can make it anywhere' })
