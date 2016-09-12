@@ -69,6 +69,6 @@ private
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def day_params
-    params.require(:day).permit(:name, :description)
+    params.require(:day).permit(:title, :body, :image)
   end
 end
