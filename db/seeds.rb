@@ -7,6 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Day.delete_all
 Picture.delete_all
+User.delete_all
+
+mark = User.create( email: 'mark@ex.com', password: '123456' )
+erick = User.create( email: 'erick@ex.com', password: '123456' )
+mike = User.create( email: 'mike@ex.com', password: '123456' )
 
 day1 = Day.create({ title: 'On my way', body: "a lot happing these days.. following my own path's" })
 day2 = Day.create({ title: 'Making it', body: "if you can make it in New York you can make it anywhere"})
