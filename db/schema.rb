@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20160914184008) do
     t.datetime "updated_at", null: false
     t.integer  "rating"
     t.string   "image"
-    t.datetime "date"
+    t.datetime "day_date"
   end
 
   create_table "pictures", force: :cascade do |t|
