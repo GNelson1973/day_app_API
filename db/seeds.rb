@@ -7,11 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Day.destroy_all
 day1 = Day.create({ title: 'On my way', body: "a lot happing these days.. following my own path's",
-  rating: 7, image: open('https://hd.unsplash.com/photo-1470897655254-05feb2d2ab97')})
+  rating: 7, image: open('https://hd.unsplash.com/photo-1470897655254-05feb2d2ab97'),
+  day_date: (Time.now - 3.days)})
 day2 = Day.create({ title: 'Making it', body: "if you can make it in New York you can make it anywhere",
-  rating: 6, image: open('https://hd.unsplash.com/photo-1468852747768-9d51ceb4422d')})
+  rating: 6, image: open('https://hd.unsplash.com/photo-1468852747768-9d51ceb4422d'),
+  day_date: (Time.now - 2.days)})
 day3 = Day.create({ title: 'On the third day', body: "on this day we rest in peace",
-  rating: 8, image: open('https://hd.unsplash.com/photo-1468818519844-64bc429824de')})
+  rating: 8, image: open('https://hd.unsplash.com/photo-1468818519844-64bc429824de'),
+  day_date: (Time.now - 1.days)})
 
 pic11 = day1.pictures.create({ image: open('https://hd.unsplash.com/photo-1451481454041-104482d8e284') })
 pic12 = day1.pictures.create({ image: open('https://hd.unsplash.com/photo-1462212018902-1ca14eec1bb2') })
