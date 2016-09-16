@@ -1,7 +1,7 @@
 class DayAppApi::Application
   config.middleware.insert_before 0,  "Rack::Cors", debug: true, logger: (-> { Rails.logger }) do
     allow do
-      origins 'localhost:4200', '127.0.0.1:3000'
+      origins 'http://janitor-pig-53418.bitballoon.com/', '127.0.0.1:3000'
 
       resource '/cors',
         headers: :any,
